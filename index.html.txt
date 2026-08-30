@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Architecture & Semantic HTML5</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            background-color: white;
+            border: 1px solid #d0d7de;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        article {
+            background-color: #f0f6fc;
+            border: 1px solid #d0d7de;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: white; text-align: center; font-size: 1.2rem; margin-bottom: 5px;">Web Architecture & Semantic HTML5</h1>
+        <nav>
+            <a href="#architecture">Web Architecture</a> | 
+            <a href="#multimedia">Multimedia</a> | 
+            <a href="#form-section">Form Validation</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="architecture">
+            <h2>1. Web Architecture Concepts</h2>
+            <hr><br>
+            
+            <article>
+                <h3>Client-Server Model</h3>
+                <p>The <strong>Client</strong> (your browser) sends a request, and the <strong>Server</strong> returns the web page response.</p>
+            </article>
+            <article>
+                <h3>DNS (Domain Name System)</h3>
+                <p>Translates human-friendly domain names (like <code>example.com</code>) into numeric IP addresses.</p>
+            </article>
+            <article>
+                <h3>HTTP vs. HTTPS</h3>
+                <p><strong>HTTP</strong> sends data in plain text, while <strong>HTTPS</strong> encrypts data securely using SSL/TLS.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="multimedia">
+            <h2>2. HTML5 Multimedia</h2>
+            <hr><br>
+            <p class="media-label">Audio Tag:</p>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            </audio>
+            
+            <p class="media-label" style="margin-top: 15px;">Video Tag:</p>
+            <video controls width="300" style="border: 1px solid #ccc;">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </section>
+        <hr>
+        <section id="form-section">
+            <h2>3. HTML5 Form & Validation</h2>
+            <hr> <br>
+            <form action="#" method="POST">
+                <label for="fullName">Full Name (Required):</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="email">Email Address (Native Validation):</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="protocol">Which protocol uses encryption?</label>
+                <select id="protocol" name="protocol">
+                    <option value="">-- Select an Option --</option>
+                    <option value="https">HTTPS</option>
+                    <option value="http">HTTP</option>
+                </select>
+
+                <button type="submit" style="background-color: #28a745; color: white; border: none; padding: 6px 12px; border-radius: 3px; cursor: pointer; width: fit-content;">Submit Form</button>
+
+	 		<br><br>
+	 		</form>
+	 	</section>
+	</main>
+	 </body>
+
